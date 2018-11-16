@@ -14,7 +14,7 @@ body{
     background-size: 100% 100%;
 }
 *{
-    box-sizing: content-box;
+    box-sizing: content-box;    
 }
 
 .menu_group{
@@ -152,7 +152,7 @@ body{
     background-repeat: no-repeat;
     margin-top: 15px;
 }
-.vrectancontainer .i.one{
+/* .vrectancontainer .i.one{
     background-image: url("../images/gn_icon1.png");
 }
 .vrectancontainer .i.two{
@@ -160,7 +160,7 @@ body{
 }
 .vrectancontainer .i.three{
     background-image: url("../images/gn_icon3.png");
-}
+} */
 #content{
     padding-top:0px;
 }
@@ -252,7 +252,7 @@ body{
     margin-right: 5px;
     margin-top: 5px;
     background-color: #0783e5;
-    background-image: url(../picture/nav.png);
+    background-image: url(../images/nav.png);
     background-position: center center;
     background-repeat: no-repeat;
     cursor: pointer;
