@@ -28,7 +28,7 @@ function closeDialog(){
         weaverdialog.hide();},300);
 }
 $(".tilecomponent").click(function(e){
-    //  openDialog();
+    //openDialog();
     var container = $("#menu_container"),weaverdialog = $(".weaver_dialog"),
             laywidth = 1000,
             offset = container.offset(),
@@ -112,198 +112,147 @@ function showqxgl3(){
 }
 
 
-//   <!--基础配置-->
-    function showzsgl1(){
+//   <!--客户-->
+    function showkh1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/02_01.png'/>" +
+            "<img src='./images/HW/04.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：点击【新建文档】，我们可以在相关知识目录下新建HTML、WORD、EXCEL、WPS等各种形式的文档，保存提交后文档即上传到系统中"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-    function showzsgl2(){
+//   <!--客户查重（管理员）-->
+    function showkhccgly1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/02_02.png'/>" +
-            "</div>" +
-            "<div class='weaver_title' >"+
-            "说明：在新建文档时我们可以通过点击【预览】来查看文档的发布效果"+
-            "</div>" ;
-    $(".e8_silideritem").html(html);
-}
-    function showzsgl3(){
-    var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/02_03.png'/>" +
-            "</div>" +
-            "<div class='weaver_title' >"+
-            "说明：文档提交发布后，我们可以通过【共享】，赋予其他人查看、编辑、完全控制等权限，我们也可以批量共享文档"+
-            "</div>" ;
-    $(".e8_silideritem").html(html);
-}
-    function showzsgl4(){
-    var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/02_04.png'/>" +
-            "</div>" +
-            "<div class='weaver_title' >"+
-            "说明：根据文档所在的不同目录会推送到相应的门户文档元素中；也会推送到【最新文档】中"+
-            "</div>" ;
-    $(".e8_silideritem").html(html);
-}
-//   <!--考核树管理-->
-    function showrlzy1(){
-    var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/05_01.png'/>" +
+            "<img src='./images/HW/05.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：点击【人事】的【我的卡片】，通过人力资源卡片可以直接了解到我工作过程以及现在正在进行的工作，如未处理的工作流程、未读的文档、需关注的计划任务、参与过的会议与日程、项目任务、我的资产信息、参加过的培训等信息"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-    function showrlzy2(){
+//  <!--客户查重-->
+    function showkhcc1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/05_02.png'/>" +
+            "<img src='./images/HW/06.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：【我的下属】中列出的是当前操作者的直接下级，也就是他们人事卡片中的【上级】字段中的上级是当前操作者，下级的下级是不会在这里直接列出的，这样单独列出的目的是为了方便领导更好的查找自己的下级，并通过菜单了解下级的工作日程、待办流程等信息"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-//   <!--任务管理-->
-    function showzcgl1(){
+//   <!--联系人-->
+    function showlxr1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/06_01.png'/>" +
+            "<img src='./images/HW/07.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：点击【流程】的【新建流程】，找到【办公用品领用申请流程】，选择领用的办公用品名称，填写并提交"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-    function showzcgl2(){
+
+//   <!--call-plan-->
+    function showcp1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/06_02.png'/>" +
-            "</div>" +
-            "<div class='weaver_title' >"+
-            "说明：资产管理员收到我的申请流程后，审批通过"+
-            "</div>" ;
-    $(".e8_silideritem").html(html);
-}
-//   <!--数据源调整-->
-    function showkhgl1(){
-    var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/07_01.png'/>" +
+            "<img src='./images/HW/08_01.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：点击【新建客户】，在创建过程中，系统会自动过滤是否有重名的客户，如果有的话，会优先将重名的客户提供给你参考，这样可以更好得整合客户信息"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-    function showkhgl2(){
+    function showcp2(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/07_02.png'/>" +
+            "<img src='./images/HW/08_02.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：建立一个客户卡片信息，让客户经理具体维护客户信息、联系人信息、联系记录、合同、销售机会等内容"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-    function showkhgl3(){
+    function showcp3(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/07_03.png'/>" +
+            "<img src='./images/HW/08_03.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：点击【客户联系】，新建客户联系信息，记录联系内容等，还可以设置周期，对客户经理进行提醒，说明需要和客户进行联系了"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}function showcp4(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/08_04.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：点击【客户联系】，新建客户联系信息，记录联系内容等，还可以设置周期，对客户经理进行提醒，说明需要和客户进行联系了"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-//   <!--考核结果管理-->
-    function showxmgl1(){
+function showcp5(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/08_01.png'/>" +
+            "<img src='./images/HW/08_05.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：点击【客户联系】，新建客户联系信息，记录联系内容等，还可以设置周期，对客户经理进行提醒，说明需要和客户进行联系了"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+function showcp6(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/08_06.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：点击【客户联系】，新建客户联系信息，记录联系内容等，还可以设置周期，对客户经理进行提醒，说明需要和客户进行联系了"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+//   <!--营销活动-->
+    function showyxhd1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/09.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：点击【项目】的【新建项目】，选择一个对应的项目模板进行创建"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-    function showxmgl2(){
+    
+//   <!--商机线索-->
+    function showsjxs1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/08_02.png'/>" +
-            "</div>" +
-            "<div class='weaver_title' >"+
-            "说明：点击【项目】的【我的项目】，点项目名称，打开一个项目，查看项目的卡片基本信息、参与人员、项目背景、任务列表等信息"+
-            "</div>" ;
-    $(".e8_silideritem").html(html);
-}
-    function showxmgl3(){
-    var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/08_03.png'/>" +
-            "</div>" +
-            "<div class='weaver_title' >"+
-            "说明：可以对当前项目的计划结束日期、相关进度安排进行设置，支持添加子项目"+
-            "</div>" ;
-    $(".e8_silideritem").html(html);
-}
-//   <!--考核结果查询分析-->
-    function showsxxz1(){
-    var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/09_01.png'/>" +
+            "<img src='./images/HW/10.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：如果我们想实时关注协作区的动态，点击【协作】的【协作交流】找到要设置提醒的协作，右键设置为日程，如果有新的反馈，就会更新到日程提醒"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-    function showsxxz2(){
+
+// <!--我的待办-->
+    function showwddb1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/09_02.png'/>" +
-            "</div>" +
-            "<div class='weaver_title' >"+
-            "说明：点击【协作】的【协作交流】可以有权限查阅所有协作，我们可以从相关交流，与我相关，参与情况，相关资源四个维度进行查看协作区相关内容，我们也可以通过搜索获取协作区相关的交流"+
-            "</div>" ;
-    $(".e8_silideritem").html(html);
-}
-    function showsxxz3(){
-    var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/09_03.png'/>" +
-            "</div>" +
-            "<div class='weaver_title' >"+
-            "说明：进入任意一个协作区，进行回复，我们可以【与我相关】直接回复"+
-            "</div>" ;
-    $(".e8_silideritem").html(html);
-}
-    function showsxxz4(){
-    var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/09_04.png'/>" +
-            "</div>" +
-            "<div class='weaver_title' >"+
-            "说明：右击鼠标【编辑】协作。可以增加参与者，这样新增的人员就有权限查看该协作区了"+
-            "</div>" ;
-    $(".e8_silideritem").html(html);
-}
-// <!--提交记录-->
-    function showgzwb1(){
-    var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/11.png'/>" +
+            "<img src='./images/HW/11.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：点击【微博】的【我的关注】可以通过我的关注、组织架构、分享给我三个维度查看下属的工作微博，默认上级都可以看到下属的微博"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-// <!--我的待办-->
-    function showrcgl1(){
+// <!--对象子对象管理-->
+    function showdxzdxgl1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/10.png'/>" +
+            "<img src='./images/HW/12.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：【我的日程】帮助我设定每日相关的工作计划，工作计划可能来自于：自己的任务安排、项目的任务、其他同事分派的事项…所有这些都被统一安排到一个图形化的日程表中"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-//   <!--管理员设置-->
-    function showhygl1(){
+//   <!--审批流设置-->
+    function showsplsz1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/12.png'/>" +
+            "<img src='./images/HW/13.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：点击【会议】的【会议日历】，在日历面板选择要召开会议的时间，点击新建，填写会议的基本信息，如会议类型、召集人、会议名称、地点、内容，会议日程等信息"+
@@ -312,10 +261,10 @@ function showqxgl3(){
     
 }
 
-//   <!--文件下载-->
-    function showtxgl1(){
+//   <!--批量邮寄-->
+    function showplyj1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/13.png'/>" +
+            "<img src='./images/HW/14.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：我们可以通过组织架构或输入关键字的方式快速找到同事及其联系方式"+
@@ -324,10 +273,10 @@ function showqxgl3(){
     
 }
 
-// <!--字段配置-->
-    function showwysd1(){
+// <!--员工承接-->
+    function showygcj1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/14.png'/>" +
+            "<img src='./images/HW/15.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：为企业提供了一个类似AppStore的商店，用户可在线下载试用各类应用，如主题风格"+
@@ -335,10 +284,10 @@ function showqxgl3(){
     $(".e8_silideritem").html(html);
     
 }
-// <!--日志查询-->
-    function showxtzss1(){
+// <!--赠品管理-->
+    function showzpgl1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/15_01.png'/>" +
+            "<img src='./images/HW/16.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：知识树提供了一个让员工全面了解系统功能的途径，选择具体功能模块后，查看其使用说明，了解该功能的研发进展情况，以及和研发人员进行互动交流"+
@@ -346,18 +295,140 @@ function showqxgl3(){
     $(".e8_silideritem").html(html);
     
 }
-    function showxtzss2(){
+// <!--系统公告-->
+    function showxtgg1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/15_02.png'/>" +
+            "<img src='./images/HW/17.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：系统的说明书，图文并茂展示功能使用方法"+
             "</div>" ;
     $(".e8_silideritem").html(html);
 }
-    function showxtzss3(){
+// <!--文件下载-->
+    function showwjxz1(){
     var html = "<div class='weaver_img' >"+
-            "<img src='./images/KH/15_03.png'/>" +
+            "<img src='./images/HW/18.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+// <!--日志管理-->
+function showrzgl1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/19_01.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+function showrzgl2(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/19_02.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+// <!--预约任务-->
+function showyyrw1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/20.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+// <!--申请历史-->
+function showsqls1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/21.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+// <!--对象共享-->
+function showdxgx1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/22.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+// <!--未接来电-->
+function showwjld1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/23.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+// <!--语音留言-->
+function showyyly1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/24.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+// <!--客户标签-->
+function showkhbq1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/25.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+
+// <!--系统报表-->
+function showxtbb1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/26.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+// <!--客户动态-->
+function showkhdt1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/27.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+// <!--IB工单-->
+function showibgd1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/28.png'/>" +
+            "</div>" +
+            "<div class='weaver_title' >"+
+            "说明：统一需求库管理需求"+
+            "</div>" ;
+    $(".e8_silideritem").html(html);
+}
+// <!--码表-->
+function showmb1(){
+    var html = "<div class='weaver_img' >"+
+            "<img src='./images/HW/29.png'/>" +
             "</div>" +
             "<div class='weaver_title' >"+
             "说明：统一需求库管理需求"+
@@ -397,67 +468,71 @@ $(function() {
             showqxgl2();
         }else if(itemid === 'qxgl_3'){
             showqxgl3();
-        }else if(itemid === 'mhgl_3'){
-            showmhgl3();
-        }else if(itemid === 'mhgl_4'){
-            showmhgl4();
-        }else if(itemid === 'lcgl_1'){
-            showlcgl1();
-        }else if(itemid === 'lcgl_2'){
-            showlcgl2();
-        }else if(itemid === 'zsgl_1'){
-            showzsgl1();
-        }else if(itemid === 'zsgl_2'){
-            showzsgl2();
-        }else if(itemid === 'zsgl_3'){
-            showzsgl3();
-        }else if(itemid === 'zsgl_4'){
-            showzsgl4();
-        }else if(itemid === 'rlzy_1'){
-            showrlzy1();
-        }else if(itemid === 'rlzy_2'){
-            showrlzy2();
-        }else if(itemid === 'zcgl_1'){
-            showzcgl1();
-        }else if(itemid === 'zcgl_2'){
-            showzcgl2();
-        }else if(itemid === 'khgl_1'){
-            showkhgl1();
-        }else if(itemid === 'khgl_2'){
-            showkhgl2();
-        }else if(itemid === 'khgl_3'){
-            showkhgl3();
-        }else if(itemid === 'xmgl_1'){
-            showxmgl1();
-        }else if(itemid === 'xmgl_2'){
-            showxmgl2();
-        }else if(itemid === 'xmgl_3'){
-            showxmgl3();
-        }else if(itemid === 'sxxz_1'){
-            showsxxz1();
-        }else if(itemid === 'sxxz_2'){
-            showsxxz2();
-        }else if(itemid === 'sxxz_3'){
-            showsxxz3();
-        }else if(itemid === 'sxxz_4'){
-            showsxxz4();
-        }else if(itemid === 'gzwb_1'){
-            showgzwb1();
-        }else if(itemid === 'rcgl_1'){
-            showrcgl1();
-        }else if(itemid === 'hygl_1'){
-            showhygl1();
-        }else if(itemid === 'txgl_1'){
-            showtxgl1();
-        }else if(itemid === 'wysd_1'){
-            showwysd1();
-        }else if(itemid === 'xtzss_1'){
-            showxtzss1();
-        }else if(itemid === 'xtzss_2'){
-            showxtzss2();
-        }else if(itemid === 'xtzss_3'){
-            showxtzss3();
-        }
+        }else if(itemid === 'kh_1'){
+            showkh1();
+        }else if(itemid === 'khccgly_1'){
+            showkhccgly1();
+        }else if(itemid === 'khcc_1'){
+            showkhcc1();
+        }else if(itemid === 'lxr_1'){
+            showlxr1();
+        }else if(itemid === 'cp_1'){
+            showcp1();
+        }else if(itemid === 'cp_2'){
+            showcp2();
+        }else if(itemid === 'cp_3'){
+            showcp3();
+        }else if(itemid === 'cp_4'){
+            showcp4();
+        }else if(itemid === 'cp_5'){
+            showcp5();
+        }else if(itemid === 'cp_6'){
+            showcp6();
+        }else if(itemid === 'yxhd_1'){
+            showyxhd1();
+        }else if(itemid === 'sjxs_1'){
+            showsjxs1();
+        }else if(itemid === 'wddb_1'){
+            showwddb1();
+        }else if(itemid === 'dxzdxgl_1'){
+            showdxzdxgl1();
+        }else if(itemid === 'splsz_1'){
+            showsplsz1();
+        }else if(itemid === 'plyj_1'){
+            showplyj1();
+        }else if(itemid === 'ygcj_1'){
+            showygcj1();
+        }else if(itemid === 'zpgl_1'){
+            showzpgl1();
+        }else if(itemid === 'xtgg_1'){
+            showxtgg1();
+        }else if(itemid === 'wjxz_1'){
+            showwjxz1();
+        }else if(itemid === 'rzgl_1'){
+            showrzgl1();
+        }else if(itemid === 'rzgl_2'){
+            showrzgl2();
+        }else if(itemid === 'yyrw_1'){
+            showyyrw1();
+        }else if(itemid === 'sqls_1'){
+            showsqls1();
+        }else if(itemid === 'dxgx_1'){
+            showdxgx1();
+        }else if(itemid === 'wjld_1'){
+            showwjld1();
+        }else if(itemid === 'yyly_1'){
+            showyyly1();
+        }else if(itemid === 'khbq_1'){
+            showkhbq1();
+        }else if(itemid === 'xtbb_1'){
+            showxtbb1();
+        }else if(itemid === 'khdt_1'){
+            showkhdt1();
+        }else if(itemid === 'ibgd_1'){
+            showibgd1();
+        }else if(itemid === 'mb_1'){
+            showmb1();
+        }   
         e.stopPropagation();
     });
     $(".e8_close").click(function(){
@@ -507,148 +582,103 @@ $(function() {
             "</div>";
             submenus.push(submenu);
             $(".e8_modulename").html("权限管理模块");	  
-        }else if(itemid === 'mhgl'){
-            submenu= "<div class='e8_submenu' itemid='zsgl_1'> "+
+        }else if(itemid === 'kh'){
+            submenu= "<div class='e8_submenu' itemid='kh_1'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>数据源设置</span> "+
+            " <span>客户</span> "+
+            "</div>";
+            submenus.push(submenu);
+           
+            $(".e8_modulename").html("客户模块");	  
+        }else if(itemid === 'khccgly'){
+            submenu= "<div class='e8_submenu' itemid='khccgly_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>客户查重(管理员)</span> "+
             "</div>";
             submenus.push(submenu);
 
-            submenu= "<div class='e8_submenu' itemid='zsgl_2'> "+
+            $(".e8_modulename").html("客户查重(管理员)模块");	  
+        }else if(itemid === 'khcc'){
+
+            submenu= "<div class='e8_submenu' itemid='khcc_1'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>考核批次管理</span> "+
+            " <span>客户查重</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("客户查重模块");
+
+        }else if(itemid === 'lxr'){
+            submenu= "<div class='e8_submenu' itemid='lxr_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>联系人</span> "+
             "</div>";
             submenus.push(submenu);
 
-            submenu= "<div class='e8_submenu' itemid='zsgl_3'> "+
+            
+            $(".e8_modulename").html("联系人模块");	  
+        }else if(itemid === 'cp'){
+            submenu= "<div class='e8_submenu' itemid='cp_1'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>常量维护</span> "+
+            " <span>call-plan</span> "+
             "</div>";
             submenus.push(submenu);
 
-            submenu= "<div class='e8_submenu' itemid='zsgl_4'> "+
+            submenu= "<div class='e8_submenu' itemid='cp_2'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>审批流配置</span> "+
-            "</div>";
-            submenus.push(submenu);
-            $(".e8_modulename").html("基础配置模块");	  
-        }else if(itemid === 'rlzy'){
-            submenu= "<div class='e8_submenu' itemid='rlzy_1'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>考核树设置</span> "+
+            " <span>call-plan设置</span> "+
             "</div>";
             submenus.push(submenu);
 
-            submenu= "<div class='e8_submenu' itemid='rlzy_2'> "+
+            submenu= "<div class='e8_submenu' itemid='cp_3'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>考核树浏览</span> "+
+            " <span>call-plan明细</span> "+
             "</div>";
             submenus.push(submenu);
-            $(".e8_modulename").html("考核树管理模块");	  
-        }else if(itemid === 'zcgl'){
-            submenu= "<div class='e8_submenu' itemid='zcgl_1'> "+
+            submenu= "<div class='e8_submenu' itemid='cp_4'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>任务导入/导出</span> "+
+            " <span>call-list</span> "+
             "</div>";
             submenus.push(submenu);
-
-            submenu= "<div class='e8_submenu' itemid='zcgl_2'> "+
+            submenu= "<div class='e8_submenu' itemid='cp_5'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>销售人员确认维护</span> "+
+            " <span>call-log</span> "+
             "</div>";
             submenus.push(submenu);
-            $(".e8_modulename").html("任务管理模块");	  
-        }else if(itemid === 'khgl'){
-            submenu= "<div class='e8_submenu' itemid='khgl_1'> "+
+            submenu= "<div class='e8_submenu' itemid='cp_6'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>订单划拨调整</span> "+
+            " <span>call-log-NRT</span> "+
             "</div>";
             submenus.push(submenu);
-
-            submenu= "<div class='e8_submenu' itemid='khgl_2'> "+
+            $(".e8_modulename").html("call-plan模块");	  
+        }else if(itemid === 'yxhd'){
+            submenu= "<div class='e8_submenu' itemid='yxhd_1'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>虚拟订单调整</span> "+
+            " <span>营销活动</span> "+
             "</div>";
             submenus.push(submenu);
-
-            submenu= "<div class='e8_submenu' itemid='khgl_3'> "+
+            
+            $(".e8_modulename").html("营销活动模块");	  
+        }  else if(itemid === 'sjxs'){
+            submenu= "<div class='e8_submenu' itemid='sjxs_1'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>数据源查看/导出</span> "+
+            " <span>商机线索</span> "+
             "</div>";
             submenus.push(submenu);
-            $(".e8_modulename").html("数据源调整模块");	  
-        }else if(itemid === 'xmgl'){
-            submenu= "<div class='e8_submenu' itemid='xmgl_1'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>完成量调整</span> "+
-            "</div>";
-            submenus.push(submenu);
-
-            submenu= "<div class='e8_submenu' itemid='xmgl_2'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>综合完成率调整</span> "+
-            "</div>";
-            submenus.push(submenu);
-
-            submenu= "<div class='e8_submenu' itemid='xmgl_3'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>非计算指标上传/调整</span> "+
-            "</div>";
-            submenus.push(submenu);
-            $(".e8_modulename").html("考核结果管理模块");	  
-        }else if(itemid === 'sxxz'){
-            submenu= "<div class='e8_submenu' itemid='sxxz_1'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>个岗查询</span> "+
-            "</div>";
-            submenus.push(submenu);
-
-            submenu= "<div class='e8_submenu' itemid='sxxz_2'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>综合查询</span> "+
-            "</div>";
-            submenus.push(submenu);
-
-            submenu= "<div class='e8_submenu' itemid='sxxz_3'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>日计算个岗查询</span> "+
-            "</div>";
-            submenus.push(submenu);
-
-            submenu= "<div class='e8_submenu' itemid='sxxz_4'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>日计算综合查询</span> "+
-            "</div>";
-            submenus.push(submenu);
-            $(".e8_modulename").html("考核结果查询分析");	  
-        }  else if(itemid === 'gzwb'){
-            submenu= "<div class='e8_submenu' itemid='gzwb_1'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>提交记录</span> "+
-            "</div>";
-            submenus.push(submenu);
-            $(".e8_modulename").html("提交记录模块");	  
-        }  else if(itemid === 'rcgl'){
-            submenu= "<div class='e8_submenu' itemid='rcgl_1'> "+
+            $(".e8_modulename").html("商机线索模块");	  
+        }  else if(itemid === 'wddb'){
+            submenu= "<div class='e8_submenu' itemid='wddb_1'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
             " <span>我的待办</span> "+
@@ -663,44 +693,156 @@ $(function() {
             "</div>";
             submenus.push(submenu);
             $(".e8_modulename").html("管理员设置模块");	  
-        }  else if(itemid === 'txgl'){
-            submenu= "<div class='e8_submenu' itemid='txgl_1'> "+
+        }  else if(itemid === 'dxzdxgl'){
+            submenu= "<div class='e8_submenu' itemid='dxzdxgl_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>对象子对象管理</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("对象子对象管理模块");	  
+        }else if(itemid === 'splsz'){
+            submenu= "<div class='e8_submenu' itemid='splsz_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>审批流设置</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("审批流设置模块");	  
+        }else if(itemid === 'plyj'){
+            submenu= "<div class='e8_submenu' itemid='plyj_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>批量邮寄</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("批量邮寄模块");	  
+        }else if(itemid === 'ygcj'){
+            submenu= "<div class='e8_submenu' itemid='ygcj_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>员工承接</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("员工承接模块");	  
+        }else if(itemid === 'zpgl'){
+            submenu= "<div class='e8_submenu' itemid='zpgl_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>赠品管理</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("赠品管理模块");	  
+        }else if(itemid === 'xtgg'){
+            submenu= "<div class='e8_submenu' itemid='xtgg_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>系统公告</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("系统公告模块");	  
+        }else if(itemid === 'wjxz'){
+            submenu= "<div class='e8_submenu' itemid='wjxz_1'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
             " <span>文件下载</span> "+
             "</div>";
             submenus.push(submenu);
             $(".e8_modulename").html("文件下载模块");	  
-        }else if(itemid === 'wysd'){
-            submenu= "<div class='e8_submenu' itemid='wysd_1'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>字段配置</span> "+
-            "</div>";
-            submenus.push(submenu);
-            $(".e8_modulename").html("字段配置模块");	  
-        }else if(itemid === 'xtzss'){
-            submenu= "<div class='e8_submenu' itemid='xtzss_1'> "+
-            " <span class='middlehelper'></span> "+
-            " <img src='../images/nav.png'> "+
-            " <span>日志查询</span> "+
-            "</div>";
-            submenus.push(submenu);
-
-            submenu= "<div class='e8_submenu' itemid='xtzss_2'> "+
+        }else if(itemid === 'rzgl'){
+            submenu= "<div class='e8_submenu' itemid='rzgl_1'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
             " <span>登录日志</span> "+
             "</div>";
             submenus.push(submenu);
-
-            submenu= "<div class='e8_submenu' itemid='xtzss_3'> "+
+            submenu= "<div class='e8_submenu' itemid='rzgl_2'> "+
             " <span class='middlehelper'></span> "+
             " <img src='../images/nav.png'> "+
-            " <span>审批日志</span> "+
+            " <span>操作日志</span> "+
             "</div>";
             submenus.push(submenu);
-            $(".e8_modulename").html("日志查询模块");	  
+            $(".e8_modulename").html("日志管理模块");	  
+        }else if(itemid === 'yyrw'){
+            submenu= "<div class='e8_submenu' itemid='yyrw_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>预约任务</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("预约任务模块");	  
+        }else if(itemid === 'sqls'){
+            submenu= "<div class='e8_submenu' itemid='sqls_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>申请历史</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("申请历史模块");	  
+        }else if(itemid === 'dxgx'){
+            submenu= "<div class='e8_submenu' itemid='dxgx_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>对象共享</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("对象共享模块");	  
+        }else if(itemid === 'wjld'){
+            submenu= "<div class='e8_submenu' itemid='wjld_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>未接来电</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("未接来电模块");	  
+        }else if(itemid === 'yyly'){
+            submenu= "<div class='e8_submenu' itemid='yyly_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>语音留言</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("语音留言模块");	  
+        }else if(itemid === 'khbq'){
+            submenu= "<div class='e8_submenu' itemid='khbq_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>客户标签</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("客户标签模块");	  
+        }else if(itemid === 'xtbb'){
+            submenu= "<div class='e8_submenu' itemid='xtbb_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>系统报表</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("系统报表模块");	  
+        }else if(itemid === 'khdt'){
+            submenu= "<div class='e8_submenu' itemid='khdt_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>客户动态</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("客户动态模块");	  
+        }else if(itemid === 'ibgd'){
+            submenu= "<div class='e8_submenu' itemid='ibgd_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>IB工单</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("IB工单模块");	  
+        }else if(itemid === 'mb'){
+            submenu= "<div class='e8_submenu' itemid='mb_1'> "+
+            " <span class='middlehelper'></span> "+
+            " <img src='../images/nav.png'> "+
+            " <span>码表</span> "+
+            "</div>";
+            submenus.push(submenu);
+            $(".e8_modulename").html("码表模块");	  
         }
         $(".e8_menu").removeClass("e8_menulight");
         current.addClass("e8_menulight");

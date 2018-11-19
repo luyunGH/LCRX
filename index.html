@@ -21,6 +21,50 @@
 		<a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
 	</div>
 	<script src="js/html5shiv.min.js"></script>   <![endif]-->   
+	<style>
+		.container {
+			width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		@media (min-width: 576px){
+			.container {
+				max-width: 540px;
+			}
+		}
+		@media (min-width: 768px){
+			.container {
+				max-width: 720px;
+			}
+		}
+		@media (min-width: 992px){
+			.container {
+				max-width: 960px;
+			}
+		}
+		@media (min-width: 1200px){
+			.container {
+				padding-left: 25px;
+				padding-right: 25px;
+				max-width: 1200px;
+			}
+		}
+
+
+		@media (min-width: 992px){
+			.section-mds {
+				padding: 65px 0;
+			}
+		}
+		@media (min-width: 768px){
+		.section-mds {
+			padding: 45px 0;
+		}
+		}
+		.section-mds {
+			padding: 35px 0;
+		}
+	</style>
 </head>
 <body>
 	<div id="page-loader">
@@ -75,16 +119,7 @@
 												</li>
 											</ul>
 										</div>
-										<div class="rd-navbar-top-panel__right">
-											<ul class="list-inline-xxs">
-												<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-facebook" href="#"></a></li>
-												<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-twitter" href="#"></a></li>
-												<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-google-plus" href="#"></a></li>
-												<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-vimeo" href="#"></a></li>
-												<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-youtube" href="#"></a></li>
-												<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-pinterest-p" href="#"></a></li>
-											</ul>
-										</div>
+										
 									</div>
 								</div>
 							</div>
@@ -222,18 +257,7 @@
 					<div class="col-sm-12"><h4 class="heading-decorated">我们的服务</h4></div>
 				</div>
 				<div class="row row-50 justify-content-md-center justify-content-lg-start">
-					<!-- <div class="col-md-6 col-xl-4">
-						<article class="blurb blurb-circle">
-							<div class="unit flex-sm-row unit-spacing-md">
-								<div class="unit__left">
-									<div class="blurb-circle__icon"><span class="icon novi-icon linear-icon-pencil-ruler"></span></div>
-								</div>
-								<div class="unit__body"><p class="heading-6 blurb__title"><a href="#">Pre-construction Services</a></p>
-									<p>We take our time on initial planning before any construction begins, to balance all the financial and
-										efficiency issues beforehand...</p></div>
-							</div>
-						</article>
-					</div> -->
+					
 					<div class="col-md-6 col-xl-3">
 						<article class="blurb blurb-circle">
 							<div class="unit flex-sm-row unit-spacing-md">
@@ -241,7 +265,7 @@
 									<div class="blurb-circle__icon"><span class="icon novi-icon linear-icon-users"></span></div>
 								</div>
 								<div class="unit__body"><p class="heading-6 blurb__title"><a href="#">顾问服务</a></p>
-									<p>为企业所面临的系统性难题，提供优质的建议或解决方案.</p></div>
+									<p class="post-classic-body">为企业所面临的系统性难题，提供优质的建议或解决方案.</p></div>
 							</div>
 						</article>
 					</div>
@@ -252,7 +276,7 @@
 									<div class="blurb-circle__icon"><span class="icon novi-icon linear-icon-wall"></span></div>
 								</div>
 								<div class="unit__body"><p class="heading-6 blurb__title"><a href="#">软件定制</a></p>
-									<p>可根据客户的需求，量身定制一系列符合客户实际应用的软件.</p></div>
+									<p class="post-classic-body">可根据客户的需求，量身定制一系列符合客户实际应用的软件.</p></div>
 							</div>
 						</article>
 					</div>
@@ -263,7 +287,7 @@
 									<div class="blurb-circle__icon"><span class="icon novi-icon linear-icon-apartment"></span></div>
 								</div>
 								<div class="unit__body"><p class="heading-6 blurb__title"><a href="#">系统运维</a></p>
-									<p>为企业现有系统提供日常运维及技术支持等服务.</p></div>
+									<p class="post-classic-body">为企业现有系统提供日常运维及技术支持等服务.</p></div>
 							</div>
 						</article>
 					</div>
@@ -278,32 +302,16 @@
 							</div>
 						</article>
 					</div>
-					<!-- <div class="col-md-6 col-xl-4">
-						<article class="blurb blurb-circle">
-							<div class="unit flex-sm-row unit-spacing-md">
-								<div class="unit__left">
-									<div class="blurb-circle__icon"><span class="icon novi-icon linear-icon-pencil-ruler2"></span></div>
-								</div>
-								<div class="unit__body"><p class="heading-6 blurb__title"><a href="#">Design-Build</a></p>
-									<p>If a project is not too complex, we may hire a designer-builder type of contractor, to make the
-										longevity of the construction shorter.</p></div>
-							</div>
-						</article>
-					</div> -->
+					
 				</div>
 			</div>
 		</section>
-		<section class="section-md bg-accent text-center novi-background bg-cover">
+		<section class="bg-default text-center novi-background bg-default" id="projects">
 			<div class="container">
-				<div class="row row-fix justify-content-md-center">
-					<div class="col-md-11 col-lg-9 col-xl-8"><h4 class="heading-decorated">如果你能够实现它，那么我们可以建立它！
-							 <br class="d-none d-lg-inline"> 告诉我们有关您的项目的更多信息</h4>
-						<!-- <a class="button button-primary" href="#modal" data-toggle="modal">联系我们</a></div> -->
-						<a class="button button-primary" href="#contacts" data-toggle="modal">联系我们</a></div>
+				<div class="row row-fix" style="margin-bottom: 45px;">
+					<div class="col-sm-12"><h4 class="heading-decorated">我们的产品</h4></div>
 				</div>
 			</div>
-		</section>
-		<section class="bg-default" id="projects">
 			<div class="container-fluid container-flex">
 				<div class="row no-gutters">
 					
@@ -324,8 +332,10 @@
 										<img class="thumb-creative__image" src="images/project-2-480x361.jpg" alt="" width="480" height="361">
 									</figure>
 									<div class="thumb-creative__content"><h6 class="thumb-creative__title"><a href="#">百应资产管理系统</a></h6>
-										<p>Working on a socially important building, such as a park involves additional landscape construction
-											expertise.…</p><a class="button button-link" href="./BYSystem.html">查看项目</a></div>
+										<!-- <p>Working on a socially important building, such as a park involves additional landscape construction
+											expertise.…</p> -->
+										<a class="button button-link" href="./BYSystem.html" target="_Blank">查看项目</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -348,8 +358,8 @@
 									</figure>
 									<div class="thumb-creative__content"><h6 class="thumb-creative__title"><a href="#">话务系统</a>
 									</h6>
-										<p>While constructing a headquarters building for an IT company is relatively easy, we’ve also…</p>
-										<a class="button button-link" href="./HWSystem.html">查看项目</a></div>
+										<!-- <p>While constructing a headquarters building for an IT company is relatively easy, we’ve also…</p> -->
+										<a class="button button-link" href="./HWSystem.html" target="_Blank">查看项目</a></div>
 								</div>
 							</div>
 						</div>
@@ -371,12 +381,22 @@
 										<img class="thumb-creative__image" src="images/project-1-480x361.jpg" alt="" width="480" height="361">
 									</figure>
 									<div class="thumb-creative__content"><h6 class="thumb-creative__title"><a href="#">考核系统</a></h6>
-										<p>It’s probably the most diverse category of construction to work in. But we’ve got experience…</p>
-										<a class="button button-link" href="./KHSystem.html">查看项目</a></div>
+										<!-- <p>It’s probably the most diverse category of construction to work in. But we’ve got experience…</p> -->
+										<a class="button button-link" href="./KHSystem.html" target="_Blank">查看项目</a></div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-mds bg-accent text-center novi-background bg-cover">
+			<div class="container">
+				<div class="row row-fix justify-content-md-center">
+					<div class="col-md-11 col-lg-9 col-xl-8"><h5 class="heading-decorated" style="font-weight: 400;font-size: 20px;">如果你能够实现它，那么我们可以建立它！
+							 <br class="d-none d-lg-inline"> 告诉我们有关您的项目的更多信息</h5>
+						<!-- <a class="button button-primary" href="#modal" data-toggle="modal">联系我们</a></div> -->
+						<!-- <a class="button button-primary" href="#contacts" data-toggle="modal">联系我们</a></div> -->
 				</div>
 			</div>
 		</section>
@@ -387,94 +407,51 @@
 						<div class="owl-carousel" data-items="1" data-sm-items="2" data-md-items="2" data-lg-items="3" data-xl-items="3" data-dots="true" data-nav="false" data-stage-padding="15" data-loop="false" data-margin="30" data-mouse-drag="false">
 							<article class="thumb-flat">
 								<img class="thumb-flat__image" src="images/project-1-480x361-479x361.jpg" alt="" width="418" height="415">
-								<div class="thumb-flat__body"><p class="heading-6"><a href="#">Calvin Fitzgerald</a></p>
-									<p class="thumb-flat__subtitle">President</p>
-									<p>Calvin Fitzgerald is an established and well-respected expert in the construction industry. With more
-										than 35 years of practical experience in the business, Calvin has built his career on bringing the
-										most outlandish conceptual visions from blueprints to a street next to yours... His leadership skills
-										cemented Constructo’s dominating positions among our competitors.</p></div>
+								<div class="thumb-flat__body"><p class="heading-6"><a href="#">expert advisor</a></p>
+									<p class="thumb-flat__subtitle">大数据专家</p>
+									<p class="post-classic-body">卡多年数据开发经验，精于数据挖掘和算法研究，能快速搭建大数据技术体系，基于数据为企业提供精准的人力资源管理数据洞察。</p></div>
 							</article>
 							<article class="thumb-flat">
 								<img class="thumb-flat__image" src="images/project-1-480x361-479x361.jpg" alt="" width="418" height="415">
-								<div class="thumb-flat__body"><p class="heading-6"><a href="#">Taylor Wilson</a></p>
-									<p class="thumb-flat__subtitle">Chief Executive Officer</p>
-									<p>Taylor's been involved in the construction business since the 1990s... His profound experience in
-										building miscellaneous types of projects and his innovative mindset makes him the leading force in our
-										company. The BIM and DB methods that he implemented are now the lynchpins of our business operations
-										with all of our clients...</p></div>
+								<div class="thumb-flat__body"><p class="heading-6"><a href="#">expert advisor</a></p>
+									<p class="thumb-flat__subtitle">大数据专家</p>
+									<p class="post-classic-body">卡多年数据开发经验，精于数据挖掘和算法研究，能快速搭建大数据技术体系，基于数据为企业提供精准的人力资源管理数据洞察。</p></div>
+							
 							</article>
 							<article class="thumb-flat">
 								<img class="thumb-flat__image" src="images/project-1-480x361-479x361.jpg" alt="" width="418" height="415">
-								<div class="thumb-flat__body"><p class="heading-6"><a href="#">Josh Wagner</a></p>
-									<p class="thumb-flat__subtitle">Chief Design Officer</p>
-									<p>Josh leads our creative team of designers and engineers...His proven ability to manage the most
-										complex projects and bring the craziest concepts to life is what makes him as efficient as he is.
-										Together, this creative team can be the launchpad of any project, giving it a head start at the
-										earliest stages of the construction project's planning.</p></div>
+								<div class="thumb-flat__body"><p class="heading-6"><a href="#">expert advisor</a></p>
+									<p class="thumb-flat__subtitle">大数据专家</p>
+									<p class="post-classic-body">卡多年数据开发经验，精于数据挖掘和算法研究，能快速搭建大数据技术体系，基于数据为企业提供精准的人力资源管理数据洞察。</p></div>
+							
 							</article>
 							<article class="thumb-flat">
 								<img class="thumb-flat__image" src="images/project-1-480x361-479x361.jpg" alt="" width="418" height="415">
-								<div class="thumb-flat__body"><p class="heading-6"><a href="#">Luis Maxwell</a></p>
-									<p class="thumb-flat__subtitle">Contractors Operations Head</p>
-									<p>While we do all the pre-construction planning and sketching, scheduling and managing on an in-house
-										basis, we hire a lot of 3rd party contractors for the actual on-site work. Luis Maxwell is the person
-										to manage all our contractors across all of our projects being currently in development.</p></div>
+								<div class="thumb-flat__body"><p class="heading-6"><a href="#">expert advisor</a></p>
+									<p class="thumb-flat__subtitle">大数据专家</p>
+									<p class="post-classic-body">卡多年数据开发经验，精于数据挖掘和算法研究，能快速搭建大数据技术体系，基于数据为企业提供精准的人力资源管理数据洞察。</p></div>
+							
 							</article>
 							<article class="thumb-flat">
 								<img class="thumb-flat__image" src="images/project-1-480x361-479x361.jpg" alt="" width="418" height="415">
-								<div class="thumb-flat__body"><p class="heading-6"><a href="#">Ken Ferguson</a></p>
-									<p class="thumb-flat__subtitle">Chief Financial Officer</p>
-									<p>Ken's been working as a chief financial analyst for Bechtel; Fluor Corp.; CB&amp;I and Kiewit Corp.
-										During those years he excelled in this field, efficiently cutting the side expenses that were bringing
-										those top contractors down. Few years ago we managed to get him onboard, and not even a full year
-										later we've had a our returns in a form of an optimized expenses budget!</p></div>
+								<div class="thumb-flat__body"><p class="heading-6"><a href="#">expert advisor</a></p>
+									<p class="thumb-flat__subtitle">大数据专家</p>
+									<p class="post-classic-body">卡多年数据开发经验，精于数据挖掘和算法研究，能快速搭建大数据技术体系，基于数据为企业提供精准的人力资源管理数据洞察。</p></div>
+							
 							</article>
 							<article class="thumb-flat">
 								<img class="thumb-flat__image" src="images/project-1-480x361-479x361.jpg" alt="" width="418" height="315">
-								<div class="thumb-flat__body"><p class="heading-6"><a href="#">Edward Elliott</a></p>
-									<p class="thumb-flat__subtitle">Vice President of Operations</p>
-									<p>Previously Edward owned his own mid-sized contracting company. That kind of a first hand,
-										entrepreneurial experience in managing all the processes and operations for a construction company got
-										our attention. Last year we invited him to join our team, which he fortunately did...</p></div>
+								<div class="thumb-flat__body"><p class="heading-6"><a href="#">expert advisor</a></p>
+									<p class="thumb-flat__subtitle">大数据专家</p>
+									<p class="post-classic-body">卡多年数据开发经验，精于数据挖掘和算法研究，能快速搭建大数据技术体系，基于数据为企业提供精准的人力资源管理数据洞察。</p></div>
+							
 							</article>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- <section>
-			<div class="parallax-content">
-				<div class="section-lg context-dark">
-					<div class="container">
-						<div class="row row-50">
-							<div class="col-md-6">
-								<div class="quote-default quote-default_left">
-									<div class="quote-default__image">
-										<img src="images/deborah-quagmire-120x120.jpg" alt="" width="120" height="120"></div>
-									<svg class="quote-default__mark" version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30.234px" height="23.484px" viewBox="0 0 30.234 23.484" xml:space="preserve">                       <g>                         <path d="M12.129,0v1.723c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959              c0,0.445,0.07,0.773,0.211,0.984c0.093,0.141,0.199,0.211,0.316,0.211c0.117,0,0.293-0.082,0.527-0.246              c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.519,0.545,3.551,1.635c1.031,1.09,1.547,2.385,1.547,3.885              c0,1.57-0.592,2.953-1.775,4.148c-1.184,1.195-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426              C0.715,19.441,0,17.274,0,14.555c0-3.164,0.972-6,2.918-8.508C4.863,3.539,7.933,1.524,12.129,0z M29.039,0v1.723              c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959c0,0.445,0.07,0.773,0.211,0.984              c0.094,0.141,0.199,0.211,0.316,0.211s0.293-0.082,0.527-0.246c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.52,0.545,3.551,1.635              s1.547,2.385,1.547,3.885c0,1.57-0.592,2.953-1.775,4.148s-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426              s-2.145-3.785-2.145-6.504c0-3.164,0.973-6,2.918-8.508C21.773,3.539,24.844,1.524,29.039,0z"></path>                       </g>                     </svg>
-									<div class="quote-default__text"><p class="q">As an official from North Dakota's state government, I
-										want to thank your construction company. On behalf of the citizens of the state, we're so grateful for
-										this new innovative building! This allows North Dakota to hold its legislative operations in a
-										contemporary, progressive architectural environment!</p></div>
-									<p class="quote-default__cite text-primary">Deborah Quagmire</p></div>
-							</div>
-							<div class="col-md-6">
-								<div class="quote-default quote-default_left">
-									<div class="quote-default__image">
-										<img src="images/benedict-arnold-120x120.jpg" alt="" width="120" height="120"></div>
-									<svg class="quote-default__mark" version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30.234px" height="23.484px" viewBox="0 0 30.234 23.484" xml:space="preserve">                       <g>                         <path d="M12.129,0v1.723c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959              c0,0.445,0.07,0.773,0.211,0.984c0.093,0.141,0.199,0.211,0.316,0.211c0.117,0,0.293-0.082,0.527-0.246              c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.519,0.545,3.551,1.635c1.031,1.09,1.547,2.385,1.547,3.885              c0,1.57-0.592,2.953-1.775,4.148c-1.184,1.195-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426              C0.715,19.441,0,17.274,0,14.555c0-3.164,0.972-6,2.918-8.508C4.863,3.539,7.933,1.524,12.129,0z M29.039,0v1.723              c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959c0,0.445,0.07,0.773,0.211,0.984              c0.094,0.141,0.199,0.211,0.316,0.211s0.293-0.082,0.527-0.246c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.52,0.545,3.551,1.635              s1.547,2.385,1.547,3.885c0,1.57-0.592,2.953-1.775,4.148s-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426              s-2.145-3.785-2.145-6.504c0-3.164,0.973-6,2.918-8.508C21.773,3.539,24.844,1.524,29.039,0z"></path>                       </g>                     </svg>
-									<div class="quote-default__text"><p class="q">This bridge project was funded by small and medium
-										business of Rhode Island, as well as by its private citizens. After the hurricane hit our shores
-										recently, we all were concerned for the Okaloppo river not having a proper landline connection. But
-										now, after Constructo company finished the project, the county can enjoy its new, beautiful
-										infrastructure!</p></div>
-									<p class="quote-default__cite text-primary">Benedict Arnold</p></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
+		
 		<section class="section-md bg-gray-lighter novi-background bg-cover">
 			<div class="container">
 				<div class="row row-fix">
@@ -484,40 +461,61 @@
 					<div class="col-md-6 col-xl-4">
 						<article class="post-classic post-minimal">
 							<img src="images/home-post-1-418x315.jpg" alt="" width="418" height="315">
-							<div class="post-classic-title"><h6><a href="#">Future proofing hospitals</a></h6></div>
+							<div class="post-classic-title"><h6><a href="#">北京联创锐鑫信息技术有限公司年会活动</a></h6></div>
 							<div class="post-meta">
 								<div class="group"><a href="#">
-									<time datetime="2017">Jan.20, 2017</time>
-								</a><a class="meta-author" href="#">by Brian Williamson</a></div>
+									<time datetime="2017">2018年1月26日</time>
+								</a>
+								<a class="meta-author" href="#">北京联创锐鑫信息技术有限公司</a>
 							</div>
-							<div class="post-classic-body"><p>By improving the physical layout of hospitals and medical facilities, we
-								can enhance and increase safety mechanisms, improve care, and…</p></div>
+							</div>
+							<div class="post-classic-body">
+								<p>北京联创锐鑫信息技术有限公司的伙伴们来到了美丽的怀柔，
+									在集贤山庄进行了为期一天的拓展活动。在拓展的过程中参与了团队热身、
+									我来笔划你们猜、趣味接力赛、就不听指挥等多种拓展项目，
+									联创锐鑫的伙伴们用热情活泼、积极主动的参与态度完成了本次拓展活动。
+								</p>
+							</div>
 						</article>
 					</div>
 					<div class="col-md-6 col-xl-4">
 						<article class="post-classic post-minimal">
 							<img src="images/home-post-2-418x315.jpg" alt="" width="418" height="315">
-							<div class="post-classic-title"><h6><a href="#">Bike parts warehouse, DE</a></h6></div>
+							<div class="post-classic-title"><h6><a href="#">北京联创锐鑫信息技术有限公司年会活动</a></h6></div>
 							<div class="post-meta">
-								<div class="group"><a href="#">
-									<time datetime="2017">Jan.20, 2017</time>
-								</a><a class="meta-author" href="#">by Brian Williamson</a></div>
-							</div>
-							<div class="post-classic-body"><p>Delaware proved to be a very friendly place to work at… While invited
-								there for completing a mid-sized warehouse for…</p></div>
+									<div class="group"><a href="#">
+										<time datetime="2017">2018年1月26日</time>
+									</a>
+									<a class="meta-author" href="#">北京联创锐鑫信息技术有限公司</a>
+								</div>
+								</div>
+								<div class="post-classic-body">
+									<p>北京联创锐鑫信息技术有限公司的伙伴们来到了美丽的怀柔，
+										在集贤山庄进行了为期一天的拓展活动。在拓展的过程中参与了团队热身、
+										我来笔划你们猜、趣味接力赛、就不听指挥等多种拓展项目，
+										联创锐鑫的伙伴们用热情活泼、积极主动的参与态度完成了本次拓展活动。
+									</p>
+								</div>
 						</article>
 					</div>
 					<div class="col-md-6 col-xl-4">
 						<article class="post-classic post-minimal">
-							<img src="images/home-post-3-418x315.jpg" alt="" width="418" height="315">
-							<div class="post-classic-title"><h6><a href="#">Joy Hotel &amp; Casino</a></h6></div>
+							<img src="images/03.jpg" alt="" width="418" height="315">
+							<div class="post-classic-title"><h6><a href="#">北京联创锐鑫信息技术有限公司年会活动</a></h6></div>
 							<div class="post-meta">
-								<div class="group"><a href="#">
-									<time datetime="2017">Jan.20, 2017</time>
-								</a><a class="meta-author" href="#">by Brian Williamson</a></div>
-							</div>
-							<div class="post-classic-body"><p>This hotel &amp; casino complex is our most recent completed building… The
-								whole structure that took us 6 months to…</p></div>
+									<div class="group"><a href="#">
+										<time datetime="2017">2018年1月26日</time>
+									</a>
+									<a class="meta-author" href="#">北京联创锐鑫信息技术有限公司</a>
+								</div>
+								</div>
+								<div class="post-classic-body">
+									<p>北京联创锐鑫信息技术有限公司的伙伴们来到了美丽的怀柔，
+										在集贤山庄进行了为期一天的拓展活动。在拓展的过程中参与了团队热身、
+										我来笔划你们猜、趣味接力赛、就不听指挥等多种拓展项目，
+										联创锐鑫的伙伴们用热情活泼、积极主动的参与态度完成了本次拓展活动。
+									</p>
+								</div>
 						</article>
 					</div>
 				</div>
@@ -526,7 +524,12 @@
 		<section class="section-md bg-default novi-background bg-cover" id="contacts">
 			<div class="container">
 				<div class="row row-50">
-					<div class="col-md-5 col-lg-4"><h4 class="heading-decorated">联系方式</h4>
+					<div class="col-md-7 col-lg-6" style="padding-right: 0;">
+						<!-- <h4 class="heading-decorated">Get in Touch</h4> -->
+						<img src="images/home-post-3-418x315.jpg" alt="" width="500" height="332">
+						
+					</div>
+					<div class="col-md-5 col-lg-6" style="padding-left: 0;"><h4 class="heading-decorated">联系方式</h4>
 						<ul class="list-sm contact-info">
 							<li>
 								<dl class="list-terms-inline">
@@ -559,7 +562,7 @@
 									<dd>Mn-Fr: 10 am-8 pm</dd>
 								</dl>
 							</li> -->
-							<li>
+							<!-- <li>
 								<ul class="list-inline-sm">
 									<li><a class="icon-sm fa-facebook novi-icon icon" href="#"></a></li>
 									<li><a class="icon-sm fa-twitter novi-icon icon" href="#"></a></li>
@@ -568,37 +571,17 @@
 									<li><a class="icon-sm fa-youtube novi-icon icon" href="#"></a></li>
 									<li><a class="icon-sm fa-pinterest-p novi-icon icon" href="#"></a></li>
 								</ul>
-							</li>
+							</li> -->
 						</ul>
 					</div>
-					<div class="col-md-7 col-lg-8">
-						<h4 class="heading-decorated">Get in Touch</h4>
-						<img src="images/home-post-3-418x315.jpg" alt="" width="418" height="315">
-						
-					</div>
+					
 				</div>
 			</div>
 		</section>
-		<!-- <section>
-			<div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-zoom="14" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#e9e9e9&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:29},{&quot;weight&quot;:0.2}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:18}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:21}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#dedede&quot;},{&quot;lightness&quot;:21}]},{&quot;elementType&quot;:&quot;labels.text.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;elementType&quot;:&quot;labels.text.fill&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:36},{&quot;color&quot;:&quot;#333333&quot;},{&quot;lightness&quot;:40}]},{&quot;elementType&quot;:&quot;labels.icon&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f2f2f2&quot;},{&quot;lightness&quot;:19}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:17},{&quot;weight&quot;:1.2}]}]">
-				<div class="google-map"></div>
-				<ul class="google-map-markers">
-					<li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="<dl><dt>Address: </dt><dd>4578 Marmora Road, Glasgow, D04 89GR</dd></dl><dl><dt>Phones: </dt><dd><a href=&quot;tel:#&quot;>(800) 123-0045</a>; <a href=&quot;tel:#&quot;>(800) 123-0046</a></dd></dl><dl><dt>We are open: </dt><dd>Mn-Fr: 10 am-8 pm</dd></dl>"></li>
-				</ul>
-			</div>
-		</section> -->
 		<footer class="footer-corporate bg-gray-darker novi-background bg-cover">
 			<div class="container">
-				<div class="footer-corporate__inner"><p class="rights">
+				<div class="footer-corporate__inner"><p class="rights" style="margin: 0 auto;">
 					<span>Constructo</span><span>&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved</p>
-					<ul class="list-inline-xxs">
-						<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-facebook" href="#"></a></li>
-						<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-twitter" href="#"></a></li>
-						<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-google-plus" href="#"></a></li>
-						<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-vimeo" href="#"></a></li>
-						<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-youtube" href="#"></a></li>
-						<li><a class="icon icon-xxs icon-gray-darker novi-icon fa fa-pinterest" href="#"></a></li>
-					</ul>
 				</div>
 			</div>
 		</footer>

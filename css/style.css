@@ -108,6 +108,11 @@ body {
 	}
 }
 
+@media (min-width: 992px) {
+	.post-classic-body {
+		font-size: 14px;
+	}
+}
 a {
 	display: inline-block;
 	text-decoration: none;
