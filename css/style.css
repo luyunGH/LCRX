@@ -667,7 +667,7 @@ code,
 
 @media (min-width: 992px) {
 	.button {
-		padding: 16px 40px;
+		padding: 10px 20px;
 		font-size: 14px;
 		line-height: 24px;
 	}
@@ -2563,9 +2563,9 @@ figure img {
 		transform: rotateY(0deg);
 		z-index: 1;
 	}
-	.desktop .thumb-creative__front .thumb-creative__image {
+	/* .desktop .thumb-creative__front .thumb-creative__image {
 		opacity: .35;
-	}
+	} */
 	.desktop .thumb-creative__front .thumb-creative__content {
 		position: absolute;
 		top: 0;
@@ -6449,7 +6449,7 @@ h3 + .owl-carousel,
 		margin-top: 28px;
 	}
 	* + .button {
-		margin-top: 45px;
+		margin-top: 35px;
 	}
 	* + .quote-centered {
 		margin-top: 50px;
@@ -10734,8 +10734,8 @@ html.boxed .rd-navbar--is-clone {
 }
 
 .ui-to-top::before {
-	content: '\e941';
-	font-family: 'Linearicons';
+	content: '\e604';
+	font-family: 'iconfont';
 }
 
 .ui-to-top, .ui-to-top:active, .ui-to-top:focus {

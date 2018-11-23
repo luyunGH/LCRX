@@ -2,7 +2,7 @@
 * {
 	font-family: "΢���ź�", arial;
 }
-
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
 #header {
 	position: fixed;
 	z-index: 9999;
